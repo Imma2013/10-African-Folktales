@@ -27,7 +27,7 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-[#ff4d29] via-[#ff3131] to-[#ff2121] px-6 py-20 md:px-20">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="text-white space-y-6">
-            <h4 className="uppercase tracking-[0.3em] font-semibold text-sm">Author: Dr. Elizabeth Barika</h4>
+            <h4 className="uppercase tracking-[0.3em] font-semibold text-sm">Author: Dr. Indah Elizabeth Barika Ebnchenge</h4>
             <h1 className="text-5xl md:text-8xl font-black uppercase leading-tight">
               New <br /> Adventure
             </h1>
@@ -41,18 +41,16 @@ export default function Home() {
             </div>
           </div>
           <div className="relative flex justify-center items-center">
-            {/* 3D Book Illustration Container */}
-            <div className="relative w-full max-w-[400px] aspect-[3/4] preserve-3d">
-                <div className="w-full h-full bg-[#1a1a1a] rounded-r-lg shadow-2xl relative overflow-hidden transform hover:scale-105 transition-transform duration-500 border-l-[12px] border-white/10">
+            {/* Book Illustration Container */}
+            <div className="relative w-full max-w-[400px] aspect-[2/3]">
+                <div className="w-full h-full rounded-lg shadow-2xl relative overflow-hidden transform hover:scale-105 transition-transform duration-500">
                     <Image 
-                      src="/images/new-hero.png" 
+                      src="/images/book-front.png" 
                       alt="10 African Folktales Book Front" 
                       fill
-                      className="object-contain"
+                      className="object-cover"
                     />
                 </div>
-                {/* Book Spine Shadow */}
-                <div className="absolute -left-4 top-4 bottom-4 w-4 bg-black/20 blur-md rounded-l-lg"></div>
             </div>
           </div>
         </div>
@@ -66,8 +64,8 @@ export default function Home() {
             <div className="lg:col-span-5 relative">
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500">
                 <Image 
-                  src="/images/author-new.png" 
-                  alt="Dr. Elizabeth Barika" 
+                  src="/images/new-author.png" 
+                  alt="Dr. Indah Elizabeth Barika Ebnchenge" 
                   fill
                   className="object-cover scale-110 hover:scale-100 transition-transform duration-700"
                 />
@@ -85,16 +83,25 @@ export default function Home() {
                   The Visionary Author
                 </span>
                 <h2 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter leading-none">
-                  Dr. Elizabeth <br />
+                  Dr. Indah <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500">
-                    Barika
+                    Elizabeth Barika Ebnchenge
                   </span>
                 </h2>
               </div>
 
-              <div className="space-y-8 text-slate-600 text-xl leading-relaxed font-medium max-w-2xl">
+              <div className="space-y-8 text-slate-600 text-lg leading-relaxed font-medium max-w-2xl">
                 <p className="first-letter:text-5xl first-letter:font-black first-letter:text-red-600 first-letter:mr-3 first-letter:float-left">
-                  Dr. Elizabeth Barika is a celebrated storyteller and cultural custodian, dedicated to preserving the rich oral traditions of Africa. Through "10 African Folktales," she bridges the gap between generations, weaving wisdom and wonder into every page.
+                  Dr. Indah Elizabeth Barika Ebnchenge is a pharmacist, a certified holistic nutrition professional and a licensed financial adviser. She also serves as the Chief Executive Officer of Patriots of Blessing Humanitarian Foundation (PBHF), a 501(c)(3) nonprofit organization committed to uplifting underserved communities.
+                </p>
+                <p>
+                  Under her leadership, PBHF champions initiatives in health and nutrition education, maternal and child micronutrient support, and professional job training programs tailored for vulnerable youth and women. Through these efforts, the foundation plays a vital role in alleviating poverty and promoting sustainable well-being within marginalized populations.
+                </p>
+                <p>
+                  Her passion for service extends beyond her professional work. She is a dedicated community chaplain, a Sunday school teacher, and a volunteer deputy registrar.
+                </p>
+                <p className="font-bold text-slate-800">
+                  Proudly rooted in her heritage, Dr. Indah hails from the Meta tribe in the Northwest Region of Cameroon.
                 </p>
                 <div className="p-8 border-l-4 border-red-500 bg-white shadow-sm rounded-r-2xl italic text-slate-500 text-lg">
                   "Our stories are the heartbeat of our heritage. To tell them is to keep our ancestors alive and our children inspired."
