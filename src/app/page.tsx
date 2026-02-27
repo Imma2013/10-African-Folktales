@@ -59,27 +59,64 @@ export default function Home() {
       </section>
 
       {/* About Author Section */}
-      <section className="py-24 bg-white px-6 md:px-20">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div className="relative">
-             <div className="bg-[#f5f5f5] aspect-[4/5] rounded-lg overflow-hidden relative shadow-inner">
+      <section className="py-32 bg-slate-50 px-6 md:px-20" id="about">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            {/* Editorial Image Card */}
+            <div className="lg:col-span-5 relative">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500">
                 <Image 
-                  src="/images/new-author.png" 
+                  src="/images/author-new.png" 
                   alt="Dr. Elizabeth Barika" 
                   fill
-                  className="object-cover"
+                  className="object-cover scale-110 hover:scale-100 transition-transform duration-700"
                 />
-             </div>
-          </div>
-          <div className="space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Dr. Elizabeth Barika</h2>
-            <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
-                <p>
-                    Inappropriate behavior is often laughed off as "boys will be boys," women face higher conduct standards – especially in the workplace. That's why it's crucial that, as women.
+                <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-2xl"></div>
+              </div>
+              {/* Decorative Elements */}
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-red-500/10 rounded-full blur-3xl -z-10"></div>
+              <div className="absolute -top-6 -left-6 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl -z-10"></div>
+            </div>
+
+            {/* Content Column */}
+            <div className="lg:col-span-7 space-y-10">
+              <div className="space-y-4">
+                <span className="inline-block px-4 py-1.5 bg-red-50 text-red-600 text-xs font-bold uppercase tracking-[0.2em] rounded-full">
+                  The Visionary Author
+                </span>
+                <h2 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter leading-none">
+                  Dr. Elizabeth <br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500">
+                    Barika
+                  </span>
+                </h2>
+              </div>
+
+              <div className="space-y-8 text-slate-600 text-xl leading-relaxed font-medium max-w-2xl">
+                <p className="first-letter:text-5xl first-letter:font-black first-letter:text-red-600 first-letter:mr-3 first-letter:float-left">
+                  Dr. Elizabeth Barika is a celebrated storyteller and cultural custodian, dedicated to preserving the rich oral traditions of Africa. Through "10 African Folktales," she bridges the gap between generations, weaving wisdom and wonder into every page.
                 </p>
-                <p>
-                    Inappropriate behavior is often laughed off as "boys will be boys," women face higher conduct standards – especially in the workplace. That's why it's crucial that, as women. inappropriate behavior is often laughed off as "boys will be boys," women face higher conduct standards – especially in the workplace. That's why it's crucial that, as women.
-                </p>
+                <div className="p-8 border-l-4 border-red-500 bg-white shadow-sm rounded-r-2xl italic text-slate-500 text-lg">
+                  "Our stories are the heartbeat of our heritage. To tell them is to keep our ancestors alive and our children inspired."
+                </div>
+              </div>
+
+              <div className="flex flex-wrap gap-6 pt-4">
+                <div className="flex flex-col">
+                  <span className="text-3xl font-black text-slate-900 tracking-tight">10+</span>
+                  <span className="text-xs uppercase tracking-widest font-bold text-slate-400">Folktales</span>
+                </div>
+                <div className="w-px h-12 bg-slate-200"></div>
+                <div className="flex flex-col">
+                  <span className="text-3xl font-black text-slate-900 tracking-tight">25k</span>
+                  <span className="text-xs uppercase tracking-widest font-bold text-slate-400">Readers</span>
+                </div>
+                <div className="w-px h-12 bg-slate-200"></div>
+                <div className="flex flex-col">
+                  <span className="text-3xl font-black text-slate-900 tracking-tight">4.9/5</span>
+                  <span className="text-xs uppercase tracking-widest font-bold text-slate-400">Rating</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
