@@ -45,7 +45,7 @@ export default function Home() {
             <div className="relative w-full max-w-[400px] aspect-[3/4] preserve-3d">
                 <div className="w-full h-full bg-[#1a1a1a] rounded-r-lg shadow-2xl relative overflow-hidden transform hover:scale-105 transition-transform duration-500 border-l-[12px] border-white/10">
                     <Image 
-                      src="/images/book-front.png" 
+                      src="/images/new-hero.png" 
                       alt="10 African Folktales Book Front" 
                       fill
                       className="object-contain"
@@ -64,7 +64,7 @@ export default function Home() {
           <div className="relative">
              <div className="bg-[#f5f5f5] aspect-[4/5] rounded-lg overflow-hidden relative shadow-inner">
                 <Image 
-                  src="/images/author.png" 
+                  src="/images/new-author.png" 
                   alt="Dr. Elizabeth Barika" 
                   fill
                   className="object-cover"
@@ -85,30 +85,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Counter Section */}
-      <section className="relative py-24 bg-gray-900 overflow-hidden px-6 md:px-20">
-        <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center grayscale"></div>
-        <div className="container mx-auto relative z-10 text-center space-y-16">
-          <div className="space-y-4">
-            <h2 className="text-3xl md:text-5xl font-bold text-white">Some Features that Made us Unique</h2>
-            <p className="text-gray-400">Who are in extremely love with eco friendly system.</p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { label: "Happy Clients", value: "2536" },
-              { label: "Total Projects", value: "6784" },
-              { label: "Cups Coffee", value: "1059" },
-              { label: "Tickets Submitted", value: "12239" }
-            ].map((stat, i) => (
-              <div key={i} className="bg-white p-10 rounded-lg shadow-2xl space-y-2">
-                <h3 className="text-4xl font-bold text-red-500">{stat.value}</h3>
-                <p className="text-gray-500 font-medium">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Purchase Section */}
       <section className="py-24 bg-gray-50 px-6 md:px-20" id="price">
          <div className="container mx-auto space-y-16">
@@ -120,9 +96,6 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                {/* Digital Edition */}
                <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center space-y-6 transform hover:-translate-y-2 transition-transform duration-300">
-                  <div className="w-full aspect-[3/4] bg-white rounded-lg shadow-md flex items-center justify-center relative overflow-hidden">
-                     <Image src="/images/book-front.png" alt="Digital Edition" fill className="object-contain" />
-                  </div>
                   <div className="space-y-2">
                      <h3 className="text-xl font-bold">Digital Edition</h3>
                      <p className="text-sm text-gray-500">Instant PDF Download</p>
@@ -141,9 +114,6 @@ export default function Home() {
                {/* Paperback Edition (Highlighted) */}
                <div className="bg-white p-8 rounded-2xl shadow-2xl border-2 border-red-500 flex flex-col items-center text-center space-y-6 transform md:scale-105 relative z-10">
                   <div className="absolute -top-4 bg-red-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Most Popular</div>
-                  <div className="w-full aspect-[3/4] bg-white rounded-lg shadow-md flex items-center justify-center relative overflow-hidden">
-                     <Image src="/images/book-front.png" alt="Paperback Edition" fill className="object-contain" />
-                  </div>
                   <div className="space-y-2">
                      <h3 className="text-xl font-bold">Paperback</h3>
                      <p className="text-sm text-gray-500">Premium Glossy Finish</p>
@@ -161,9 +131,6 @@ export default function Home() {
 
                {/* Hardcover Edition */}
                <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center space-y-6 transform hover:-translate-y-2 transition-transform duration-300">
-                  <div className="w-full aspect-[3/4] bg-white rounded-lg shadow-md flex items-center justify-center relative overflow-hidden">
-                     <Image src="/images/book-back.png" alt="Hardcover Edition" fill className="object-contain" />
-                  </div>
                   <div className="space-y-2">
                      <h3 className="text-xl font-bold">Hardcover</h3>
                      <p className="text-sm text-gray-500">Deluxe Library Edition</p>
@@ -179,6 +146,8 @@ export default function Home() {
                   </button>
                </div>
             </div>
+         </div>
+      </section>
          </div>
       </section>
 
